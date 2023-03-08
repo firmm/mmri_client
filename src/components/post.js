@@ -6,7 +6,7 @@ const Post = ({ id }) => {
 
   useEffect(() => {
     const getPost = async () => {
-      const resp = await fetch(`https://serverless-api.signalnerve.workers.dev/api/posts/${id}`);
+      const resp = await fetch(`https://mmri-server.pages.dev/api/posts/${id}`);
       const postResp = await resp.json();
       setPost(postResp);
     };
