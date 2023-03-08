@@ -6,7 +6,7 @@ const Post = ({ id }) => {
 
   useEffect(() => {
     const getPost = async () => {
-      const resp = await fetch(`https://marketrisk.info/api/posts/${id}`);
+      const resp = await fetch(`https://api.marketrisk.info/api/posts/${id}`);
       const postResp = await resp.json();
       setPost(postResp);
     };
