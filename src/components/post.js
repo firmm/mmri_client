@@ -1,33 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from '@reach/router';
 
-const Post = ({ id }) => {
+const Post = ({ x }) => {
   const [post, setPost] = useState({});
 
   useEffect(() => {
     const getPost = async () => {
-      const resp = await fetch('https://api.marketrisk.info/api/posts/${id}');
+      const resp = await fetch('https://api.marketrisk.info/api/posts/${x}');
       const postResp = await resp.json();
       setPost(postResp);
     };
-
     getPost();
-  }, [id]);
-
+  }, [x]);
   if (!Object.keys(post).length) return <div />;
-
-  return (
+ return (
     <div>
-      <h1>{post.title}</h1>
-      <p>{post.text}</p>
-      <p>
-        <em>Published {new Date(post.published_at).toLocaleString()}</em>
-      </p>
+      <h1>{post.x}</h1>
+      <p>{post.y}</p>
       <p>
         <Link to="/">Go back</Link>
       </p>
     </div>
   );
 };
-
 export default Post;
