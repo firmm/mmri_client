@@ -91,10 +91,10 @@ const data = {
   return (
     <div>
         <Chart options={options} type='bar' data={data} />
-	DATE - MMRI
+	DATE - MMRI - DXY - 10 Year - 10-Year (Low/High/Open/Close) - DXY (Low/High/Open/Close)
 	{posts.map(post => (
         <div key={post.x}>
-         {post.date}  - MMRI {post.mmri} - DXY - {post.dxy} - 10-Year {post.tenyear} - 10-Year(Low/High/Open/Close) {post.TENLow}/{post.TENHigh}/{post.TENOpen}/{post.TENClose} - DXY(Low/High/Open/Close) {post.DXYLow}/{post.DXYHigh}/{post.DXYOpen}/{post.DXYClose}
+         {post.date}  - MMRI {post.mmri} - DXY - {post.dxy} - 10-Year {post.tenyear} - ({post.TENLow}/{post.TENHigh}/{post.TENOpen}/{post.TENClose}) - ( {post.DXYLow}/{post.DXYHigh}/{post.DXYOpen}/{post.DXYClose} )
         </div>
       ))}
     </div>
