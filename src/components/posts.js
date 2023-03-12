@@ -72,7 +72,6 @@ const data = {
     },
     {
       type: 'bar',
-      label: 'DXY (X2 Scale)',
       backgroundColor: 'rgb(75, 192, 192)',
       data: posts.map(post => post.dxy*2), 
       borderColor: 'white',
@@ -80,7 +79,6 @@ const data = {
     },
     {
       type: 'bar',
-      label: '10-Year (X1000 Scale)',
       backgroundColor: 'rgb(53, 162, 235)',
       data: posts.map(post => post.tenyear*1000)   
 }
