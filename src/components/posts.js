@@ -91,10 +91,19 @@ const data = {
   return (
     <div>
         <Chart options={options} type='bar' data={data} />
-	DATE - MMRI - DXY - 10 Year - 10-Year (Low/High/Open/Close) - DXY (Low/High/Open/Close)
+	
+
+Google Sheets Data
+<br />
+Github code (client/server):
+React.js client and server API. Wrangler DevOps to CloudFlare Serverless Hosting<br />
+<a href="https://github.com/firmm">MMRI Code</a>
+<br /><br />
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTyFyOCEWGYbHyrKL64_rP3aYNTPmZRqLu4YBpfMS6LhnNLT005UKJw5ziiQ8OmL-tKJtR4FpoqslKV/pubhtml">SCRUBBED DATA</a><br /><br />
+        DATE - MMRI - DXY - 10 Year - 10-Year (Low/High/Open/Close) - DXY (Low/High/Open/Close)
 	{posts.map(post => (
         <div key={post.x}>
-         {post.date}  - MMRI {post.mmri} - DXY - {post.dxy} - 10-Year {post.tenyear} - ({post.TENLow}/{post.TENHigh}/{post.TENOpen}/{post.TENClose}) - ( {post.DXYLow}/{post.DXYHigh}/{post.DXYOpen}/{post.DXYClose} )
+         {post.date}  - MMRI {post.mmri} - DXY - {post.dxy} - 10-Year {post.tenyear} - ({post.TENLow}/{post.TENHigh}/{post.TENOpen}/{post.TENClose}) - ( {post.DXYLow}/{post.DXYHigh}/{post.DXYOpen}/{post.DXYClose})
         </div>
       ))}
     </div>
