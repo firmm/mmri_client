@@ -72,6 +72,7 @@ const data = {
     },
     {
       type: 'bar',
+      label: 'DXY (X 2 Scale)',
       backgroundColor: 'rgb(75, 192, 192)',
       data: posts.map(post => post.dxy*2), 
       borderColor: 'white',
@@ -79,6 +80,7 @@ const data = {
     },
     {
       type: 'bar',
+     label: '10 Year (X 100 Scale)',
       backgroundColor: 'rgb(53, 162, 235)',
       data: posts.map(post => post.tenyear*1000)   
 }
@@ -92,7 +94,7 @@ const data = {
 	DATE - MMRI
 	{posts.map(post => (
         <div key={post.x}>
-         <Link to={`/posts/${post.x}`}>{post.date}</Link> - MMRI {post.mmri} - DXY - {post.dxy} - 10-Year {post.tenyear} - 10-Year(Low/High/Open/Close) {post.TENLow}/{post.TENHigh}/{post.TENOpen}/{post.TENClose} - DXY(Low/High/Open/Close) {post.DXYLow}/{post.DXYHigh}/{post.DXYOpen}/{post.DXYClose}
+         {post.date}  - MMRI {post.mmri} - DXY - {post.dxy} - 10-Year {post.tenyear} - 10-Year(Low/High/Open/Close) {post.TENLow}/{post.TENHigh}/{post.TENOpen}/{post.TENClose} - DXY(Low/High/Open/Close) {post.DXYLow}/{post.DXYHigh}/{post.DXYOpen}/{post.DXYClose}
         </div>
       ))}
     </div>
