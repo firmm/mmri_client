@@ -93,10 +93,11 @@ const data = {
         <Chart options={options} type='bar' data={data} />
 	
 
-Google Sheets Data
+EMAIL:<br />
+matthew.firm@icloud.com
 <br />
 Github code (client/server):
-React.js client and server API. Wrangler DevOps to CloudFlare Serverless Hosting<br />
+React.js client and server API. Free/Fast Wrangler DevOps to CloudFlare Serverless Hosting<br />
 <a href="https://github.com/firmm">MMRI Code</a>
 <br /><br />
 <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTyFyOCEWGYbHyrKL64_rP3aYNTPmZRqLu4YBpfMS6LhnNLT005UKJw5ziiQ8OmL-tKJtR4FpoqslKV/pubhtml">SCRUBBED DATA</a><br /><br />
