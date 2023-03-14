@@ -13,7 +13,7 @@ const Today = () => {
     getToday();
   }, []);
 
-  return (MMRI: {(today.dxy*(today.tenyear))/1.61})
+  return ((today.dxy*(today.tenyear))/1.61)
   }
 
 export default Today;

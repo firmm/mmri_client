@@ -88,7 +88,7 @@ const data = {
 };
   return (
     <div>
-	<h3><Today /></h3>
+	<h3>MMRI: <Today /></h3>
         <Chart options={options} type='bar' data={data} />
 <br />
 <br />
