@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Today from './components/today';
+import Today from './today.js';
 import {
   Chart as ChartJS,
   LinearScale,
@@ -86,8 +86,9 @@ const data = {
 }
   ]
 };
-  return (<h3><Today /></h3>
+  return (
     <div>
+	<h3><Today /></h3>
         <Chart options={options} type='bar' data={data} />
 <br />
 <br />
