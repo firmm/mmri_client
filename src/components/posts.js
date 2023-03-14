@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Today from './today';
-import { Link } from '@reach/router';
+import Today from './components/today';
 import {
   Chart as ChartJS,
   LinearScale,
@@ -87,7 +86,7 @@ const data = {
 }
   ]
 };
-  return (
+  return (<h3>{Today}</h3>
     <div>
         <Chart options={options} type='bar' data={data} />
 <br />
