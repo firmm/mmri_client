@@ -86,7 +86,7 @@ const data = {
 }
   ]
 };
-  return (<h3>{Today}</h3>
+  return (<h3><Today /></h3>
     <div>
         <Chart options={options} type='bar' data={data} />
 <br />
