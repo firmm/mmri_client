@@ -5,7 +5,8 @@ import Posts from './components/posts';
 function App() {
   return (
     <Router>
-      <Posts path="/" />
+        <Today path="/" />
+	<Posts path="/" />
     </Router>
   );
 }
