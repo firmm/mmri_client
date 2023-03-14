@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import { Link } from '@reach/router';
 import {
   Chart as ChartJS,
@@ -86,13 +87,11 @@ const data = {
 }
   ]
 };
-
-
   return (
     <div>
         <Chart options={options} type='bar' data={data} />
-	
-
+<br />
+<br />
 EMAIL:<br />
 matthew.firm@icloud.com
 <br />
