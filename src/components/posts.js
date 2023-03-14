@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Today from './today';
 import { Link } from '@reach/router';
 import {
   Chart as ChartJS,
